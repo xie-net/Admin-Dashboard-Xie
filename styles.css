@@ -16,5 +16,23 @@ body {
 }
 
 #side-nav {
-   
+    grid-row: 1 / 2;
+    grid-template-rows: 100px 1fr 3fr;
+}
+
+.nav-icons {
+    height: 24px;
+    width: 24px;
+}
+
+.dashboard-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-utility a,
+.nav-options a,
+.dashboard-header a {
+    text-decoration: none;
+    color: black;
 }
