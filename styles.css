@@ -64,5 +64,8 @@ body {
     gap: 30px;
 }
 
+.main-page-content {
+    grid-template-columns: 2fr 1fr;
+}
 
 
