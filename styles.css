@@ -36,3 +36,29 @@ body {
     text-decoration: none;
     color: black;
 }
+
+.greeting-project-buttons,
+.search-profile,
+.main-page-header,
+#main-page {
+    display:grid;
+    
+}
+
+#main-page {
+    grid-template-rows: 1fr 5fr;
+}
+
+.main-page-header {
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-profile {
+    grid-template-columns: 2fr 50px 1fr;
+}
+
+.greeting-project-buttons {
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
