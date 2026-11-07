@@ -18,6 +18,7 @@ body {
 #side-nav {
     grid-row: 1 / 2;
     grid-template-rows: 100px 1fr 3fr;
+    gap: 40px;
 }
 
 .nav-icons {
@@ -48,11 +49,12 @@ body {
 
 #main-page {
     gap: 30px;
+    grid-template-rows: 200px 1fr;
 }
 
 .main-page-header {
     grid-template-rows: 1fr 1fr;
-    height: 200px;
+    
 }
 
 .search-profile {
@@ -65,7 +67,24 @@ body {
 }
 
 .main-page-content {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
+.projects {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.announcements,
+.trending {
+    grid-column: 2/3;
+}
+
+.announcements {
+    grid-row: 1/2;
+}
+
+.trending {
+    grid-row: 2/3;
+}
 
