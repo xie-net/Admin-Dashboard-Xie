@@ -40,17 +40,19 @@ body {
 .greeting-project-buttons,
 .search-profile,
 .main-page-header,
-#main-page {
+#main-page,
+.main-page-content {
     display:grid;
     
 }
 
 #main-page {
-    grid-template-rows: 1fr 5fr;
+    gap: 30px;
 }
 
 .main-page-header {
     grid-template-rows: 1fr 1fr;
+    height: 200px;
 }
 
 .search-profile {
@@ -59,6 +61,8 @@ body {
 
 .greeting-project-buttons {
     grid-template-columns: 6fr 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 30px;
 }
+
+
 
