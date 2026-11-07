@@ -21,6 +21,11 @@ body {
     gap: 40px;
 }
 
+.dashboard-header {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
 .nav-icons {
     height: 24px;
     width: 24px;
@@ -60,6 +65,14 @@ body {
 .search-profile {
     grid-template-columns: 2fr 50px 1fr;
 }
+
+.profile,
+.greeting {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
 
 .greeting-project-buttons {
     grid-template-columns: 6fr 1fr 1fr 1fr;
