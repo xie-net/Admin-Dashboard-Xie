@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,8 @@
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .dashboard-header,
@@ -73,6 +77,8 @@ body {
     text-decoration: none;
     color: white;
     font-size: 20px;
+
+    font-weight: 600;
 }
 #side-nav h1 {
     color: white;
@@ -241,15 +247,17 @@ body {
 }
 
 .announcements-card p {
-    border-bottom: 0.5px solid grey;
+    background: linear-gradient(lightgrey, lightgrey) bottom center / 90% 1px no-repeat;
     padding: 10px 20px 10px 20px;
+
+    color: grey;
 }
 
 .announcements-card h4 {
     padding: 20px 20px 0px 20px;
 }
 .announcements-card p:last-child {
-  border-bottom: none;
+  background: none;
 }
 
 .announcements-card,
@@ -258,8 +266,17 @@ body {
     border-radius: 10px;
 
     display: grid;
+}
+
+.trending-card {
     grid-template-rows: 100px 100px 100px 100px;
 }
+
+.announcements-card {
+    grid-template-rows: repeat(3, auto auto);
+    padding: 20px 30px 10px 30px;
+}
+
 
 .announcements,
 .trending,
@@ -284,7 +301,7 @@ body {
 }
 
 .profile-username {
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .profile-trending-app {
@@ -307,5 +324,10 @@ body {
     grid-column: 2/3;
 }
 
+.trending-card,
+.announcements-card,
+.project-card {
+    box-shadow: 4px 4px 4px 0px lightgrey;
+}
 
 
