@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
 }
 
@@ -129,10 +129,18 @@ body {
 }
 
 .btns button {
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 120px;
 
-    border-radius: 15px;
+    border-radius: 30px;
+    box-shadow: none;
+    appearance: none;
+    border: none;
+
+    background-color: #1992D4;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .btns {
@@ -150,6 +158,11 @@ body {
     gap: 25px;
 }
 
+.profile h3 {
+    padding-left: 10px;
+    font-weight: 600px;
+}
+
 .search {
     display:grid;
     grid-template-columns: 50px 1fr;
@@ -159,10 +172,20 @@ body {
     padding: 15px 100px 15px 40px;
 }
 
+.search input {
+    border: none;
+    background-color: #E2E8F0;
+    border-radius: 30px;
+
+    height: 30px;
+    width: 700;
+}
 
 
 .main-page-content {
     grid-template-columns: 3fr 1fr;
+
+    background-color: #E2E8F0;
 }
 
 .projects {
@@ -175,16 +198,26 @@ body {
 
     gap: 20px;
     row-gap: 20px;
+
 }
 
 .project-card {
     display: grid;
     grid-template-rows: auto 2fr 1fr;
+
+    background-color: white;
+    border-radius: 10px;
+
+    border-left: 6px solid #F0B835;
 }
 
 .project-btns {
     justify-self: end;
     align-self: top;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
 }
 
 .projects h3 {
@@ -218,9 +251,16 @@ body {
 .announcements,
 .trending,
 .projects {
-    padding: 10px 20px 10px 20px;
+    padding: 40px 20px 10px 20px;
 }
 
+.project-card {
+    padding: 40px 30px 10px 40px;
+}
+
+.project-desc {
+    color: grey;
+}
 .trending {
     grid-row: 2/3;
 
