@@ -21,7 +21,7 @@ body {
 }
 
 .nav-options,
-.nav-utility {
+.nav-utility, {
     gap: 40px;
 }
 
@@ -49,11 +49,19 @@ body {
     grid-template-columns: 50px 1fr;
 }
 
-.nav-icons {
+.nav-icons,
+.profile img,
+.profile-card img,
+.project-card img,
+.search img,
+.search-profile .notif img {
     height: 24px;
     width: 24px;
+}
 
-    border-radius: 100%;
+.profile img {
+    height: 50px;
+    width: 50px;
 }
 
 .dashboard-icon {
@@ -98,10 +106,22 @@ body {
 .profile,
 .greeting {
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 50px 50px 1fr;
+    
+    align-items: center;
 }
 
+.profile {
+    gap: 25px;
+}
 
+.search {
+    display:grid;
+    grid-template-columns: 50px 1fr;
+
+    gap: 15px;
+    padding: 15px 100px 15px 30px;
+}
 
 .greeting-project-buttons {
     grid-template-columns: 6fr 1fr 1fr 1fr;
@@ -156,11 +176,6 @@ body {
     grid-column: 2/3;
 }
 
-.profile-card img,
-.project-card img,
-.main-page-header img {
-    height: 50px;
-    width: 50px;
-}
+
 
 
