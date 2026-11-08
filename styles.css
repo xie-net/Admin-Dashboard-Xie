@@ -97,13 +97,15 @@ body {
 }
 
 #main-page {
-    gap: 30px;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 220px 1fr;
 }
 
 .main-page-header {
     grid-template-rows: 80px 100px;
-    height: 175px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 5px lightgrey;
+    
 }
 
 .search-profile {
