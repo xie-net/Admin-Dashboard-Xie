@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 1px solid red;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 }
 
 .nav-options,
-.nav-utility, {
+.nav-utility {
     gap: 40px;
 }
 
@@ -59,12 +60,9 @@ body {
     width: 24px;
 }
 
-.profile img {
-    height: 50px;
-    width: 50px;
-}
 
-.dashboard-icon {
+.dashboard-icon,
+.profile img {
     height: 50px;
     width: 50px;
 }
@@ -80,7 +78,7 @@ body {
     color: white;
 }
 
-.greeting-project-buttons,
+.greeting-btns,
 .search-profile,
 .main-page-header,
 #main-page,
@@ -89,26 +87,63 @@ body {
     
 }
 
+.greeting img {
+    height: 75px;
+    width: 75px;
+}
+
+.greet {
+    font-size: 20px;
+}
+
 #main-page {
     gap: 30px;
     grid-template-rows: 200px 1fr;
 }
 
 .main-page-header {
-    grid-template-rows: 1fr 1fr;
-    
+    grid-template-rows: 80px 100px;
+    height: 175px;
 }
 
 .search-profile {
-    grid-template-columns: 2fr 50px 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .profile,
 .greeting {
     display: grid;
-    grid-template-columns: 50px 50px 1fr;
     
     align-items: center;
+}
+
+.profile {
+    grid-template-columns: 50px 50px 1fr;
+}
+
+.greeting-btns {
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+
+    align-items: center;
+}
+
+.btns button {
+    height: 30px;
+    width: 100px;
+
+    border-radius: 15px;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.greeting {
+    grid-template-columns: 100px 1fr;
+    padding: 10px 30px 10px 40px;
 }
 
 .profile {
@@ -118,15 +153,13 @@ body {
 .search {
     display:grid;
     grid-template-columns: 50px 1fr;
+    align-items: center;
 
     gap: 15px;
-    padding: 15px 100px 15px 30px;
+    padding: 15px 100px 15px 40px;
 }
 
-.greeting-project-buttons {
-    grid-template-columns: 6fr 1fr 1fr 1fr;
-    gap: 30px;
-}
+
 
 .main-page-content {
     grid-template-columns: 3fr 1fr;
